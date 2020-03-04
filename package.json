@@ -1,0 +1,24 @@
+{
+  "name": "xiaomistore",
+  "version": "1.0.0",
+  "description": "小型项目开发",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzh51912/xiaomistore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gzh51912/xiaomistore/issues"
+  },
+  "homepage": "https://github.com/gzh51912/xiaomistore#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "react-router-dom": "^5.1.2"
+  }
+}
