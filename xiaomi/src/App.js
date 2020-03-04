@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route,Switch,Redirect,NavLink} from "react-router-dom"
 import './App.css';
+import {routes} from "./router"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          <Switch>
+                {
+                  routes.map(item=>{
+                    return <Route key={item.path} path={item.path} component={item.component} />
+                  })
+                }
+                <Redirect from="/" to="/home" exact />
+                <Redirect  to="/404" />
+          </Switch>
+          <ul className="footer">
+              <li>
+                <NavLink to="/home">首页</NavLink>
+                <NavLink to="/classify">分类</NavLink>
+                <NavLink to="/cart">购物车</NavLink>
+                <NavLink to="/mine">我的</NavLink>
+              </li>
+          </ul>
     </div>
   );
 }
