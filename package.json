@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/gzh51912/xiaomistore#readme",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "react-router-dom": "^5.1.2"
   }
 }
